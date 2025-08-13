@@ -237,8 +237,8 @@ export default function NeuroscienceTimelineGame() {
               margin: '0 auto',
               transition: 'background-color 200ms'
             }}
-            onMouseOver={(e) => e.target.style.background = '#4338ca'}
-            onMouseOut={(e) => e.target.style.background = '#4f46e5'}
+            onMouseOver={(e) => (e.target as HTMLButtonElement).style.background = '#4338ca'}
+            onMouseOut={(e) => (e.target as HTMLButtonElement).style.background = '#4f46e5'}
           >
             <Shuffle style={{ width: '20px', height: '20px' }} />
             Start Challenge
@@ -343,8 +343,8 @@ export default function NeuroscienceTimelineGame() {
               margin: '0 auto',
               transition: 'background-color 200ms'
             }}
-            onMouseOver={(e) => e.target.style.background = '#4338ca'}
-            onMouseOut={(e) => e.target.style.background = '#4f46e5'}
+            onMouseOver={(e) => (e.target as HTMLButtonElement).style.background = '#4338ca'}
+            onMouseOut={(e) => (e.target as HTMLButtonElement).style.background = '#4f46e5'}
           >
             <RotateCcw style={{ width: '20px', height: '20px' }} />
             Play Again
@@ -659,8 +659,8 @@ export default function NeuroscienceTimelineGame() {
                   cursor: 'pointer',
                   transition: 'color 200ms'
                 }}
-                onMouseOver={(e) => e.target.style.color = '#1f2937'}
-                onMouseOut={(e) => e.target.style.color = '#6b7280'}
+                onMouseOver={(e) => (e.target as HTMLButtonElement).style.color = '#1f2937'}
+                onMouseOut={(e) => (e.target as HTMLButtonElement).style.color = '#6b7280'}
               >
                 Cancel
               </button>
@@ -675,8 +675,8 @@ export default function NeuroscienceTimelineGame() {
                   cursor: 'pointer',
                   transition: 'background-color 200ms'
                 }}
-                onMouseOver={(e) => e.target.style.background = '#4338ca'}
-                onMouseOut={(e) => e.target.style.background = '#4f46e5'}
+                onMouseOver={(e) => (e.target as HTMLButtonElement).style.background = '#4338ca'}
+                onMouseOut={(e) => (e.target as HTMLButtonElement).style.background = '#4f46e5'}
               >
                 Confirm
               </button>
