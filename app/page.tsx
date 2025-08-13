@@ -152,9 +152,13 @@ export default function NeuroscienceTimelineGame() {
         setCurrentItem(remainingItems[0]);
         setRemainingItems(remainingItems.slice(1));
         setFeedback('');
+        // Scroll to top for next discovery
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         setCurrentItem(null);
         setGameState('finished');
+        // Scroll to top for final results
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     }, 2000);
     
@@ -361,7 +365,8 @@ export default function NeuroscienceTimelineGame() {
         margin: '0 auto',
         padding: '24px',
         minHeight: 'calc(100vh - 60px)',
-        background: 'linear-gradient(to bottom right, rgb(253, 244, 255), rgb(252, 231, 243))'
+        background: 'linear-gradient(to bottom right, rgb(253, 244, 255), rgb(252, 231, 243))',
+        overflow: 'visible'
       }}
     >
       <div style={{ 
@@ -372,7 +377,7 @@ export default function NeuroscienceTimelineGame() {
         flexWrap: 'wrap',
         gap: '16px'
       }}>
-        <h1 style={{ fontSize: '24px', fontWeight: 'bold', color: '#1f2937' }}>Neuroscience Timeline Challenge</h1>
+        <h1 style={{ fontSize: '24px', fontWeight: 'bold', color: '#1f2937' }}>Drag and drop the remaining discoveries into the correct chronological order</h1>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{
             background: 'white',
@@ -409,8 +414,8 @@ export default function NeuroscienceTimelineGame() {
       )}
 
       <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', 
+        display: 'flex', 
+        flexDirection: 'column',
         gap: '24px'
       }}>
         {/* Current Item to Place */}
