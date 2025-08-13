@@ -411,10 +411,7 @@ export default function NeuroscienceTimelineGame() {
       <div style={{ 
         display: 'grid', 
         gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', 
-        gap: '24px',
-        '@media (min-width: 1024px)': {
-          gridTemplateColumns: '1fr 1fr'
-        }
+        gap: '24px'
       }}>
         {/* Current Item to Place */}
         <div style={{
