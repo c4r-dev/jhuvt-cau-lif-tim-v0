@@ -19,8 +19,8 @@ export default function RootLayout({
     <html lang="en">
 
       <head>
-        <title>Additional Resource Suggestions</title>
-        <meta name="description" content="Additional Resource Suggestions" />
+        <title>Neuroscience Timeline Challenge</title>
+        <meta name="description" content="Neuroscience Timeline Challenge" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
 
@@ -41,7 +41,7 @@ export default function RootLayout({
             />
           </button>
           <div className="title-container"> {/* Title container class */}
-            <h1 className="title">Additional Resource Suggestions</h1> {/* Title class */}
+            <h1 className="title">Neuroscience Timeline Challenge</h1> {/* Title class */}
           </div>
         </header>
 
