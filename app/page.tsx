@@ -210,7 +210,7 @@ export default function NeuroscienceTimelineGame() {
           }}>
             <h2 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '16px', color: '#1f2937' }}>How to Play</h2>
             <div style={{ textAlign: 'left', color: '#374151' }}>
-              <p style={{ marginBottom: '12px' }}>You'll start with one random discovery already placed on the timeline</p>
+              <p style={{ marginBottom: '12px' }}>You&apos;ll start with one random discovery already placed on the timeline</p>
               <p style={{ marginBottom: '12px' }}>Drag and drop the remaining discoveries into the correct chronological order</p>
               <p style={{ marginBottom: '12px' }}>Read the detailed descriptions carefully - they contain context clues about when discoveries occurred</p>
               <p style={{ marginBottom: '12px' }}>Look for references to earlier work, technological capabilities, and historical context</p>
@@ -633,7 +633,7 @@ export default function NeuroscienceTimelineGame() {
           }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#1f2937', marginBottom: '16px' }}>Confirm Placement</h3>
             <p style={{ color: '#6b7280', marginBottom: '8px' }}>
-              You're about to place:
+              You&apos;re about to place:
             </p>
             <div style={{
               background: '#f9fafb',
